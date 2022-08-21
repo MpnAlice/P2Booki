@@ -1,0 +1,339 @@
+/*****************************reset*******************************************/
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+}
+
+/*******************************font-import*****************************/
+:root {
+    ---darkblue: #0065FC;
+    ---lightblue: #DEEBFF;
+    ---backgrey: #F2F2F2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+
+/*******************************main-wrapper*************************/
+#main-wrapper {}
+
+/*******************************menu-section*************************/
+.header {
+    width: 100%;
+}
+
+.header-menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desktop-img {
+    width: 150px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.header-menu .header-menu-list nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.header-menu-list nav li {
+    margin: 2%;
+}
+
+a:hover {
+    border-top: 1px solid var(---darkblue);
+    color: var(---darkblue);
+
+}
+
+/*******************header-mobile-version*********************/
+@media screen and (max-width:767px) {
+    a:hover {
+        border-top: none;
+        border-bottom: 1px solid var(---darkblue);
+        color: var(---darkblue);
+        padding: 40px;
+
+
+    }
+}
+
+/***********search-section************/
+.search-wrapper {
+    width: 80%;
+}
+
+.search-intro {
+    margin-bottom: 1px;
+}
+
+.search-btn-box {
+    height: 60px;
+    width: 600px;
+    margin-top: 2%;
+    position: relative;
+
+}
+
+form .search-icon {
+    height: 40px;
+    width: 50px;
+    outline: none;
+    text-align: center;
+    padding-top: 2%;
+    background-color: var(---backgrey);
+    color: black;
+    position: relative;
+    border-radius: 15px 0 0 15px;
+}
+
+input[type=text] {
+    height: 40px;
+    outline: none;
+    border: none;
+    display: inline-block;
+    position: absolute;
+    padding: 1%;
+    border-radius: 0 15px 15px 0px;
+
+}
+
+form button {
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: var(---darkblue);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 30%;
+    border-radius: 0 15px 15px 0;
+}
+
+form .mobile-search-btn {
+    display: none;
+}
+
+.search-info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1%;
+}
+
+
+/******************searchbox-mobile-version********************************/
+@media screen and (max-width:767px) {
+    form .desktop-search-btn {
+        display: none;
+    }
+
+    form .mobile-search-btn {
+        display: inline;
+    }
+}
+
+/***********************************************************************/
+
+
+
+/******************************************************/
+
+.filters-wrapper {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.fillters-title {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+
+.filters-items {
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid var(---backgrey);
+    border-radius: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-weight: bolder;
+    margin-left: 1%;
+    cursor: pointer;
+}
+
+.filters-items-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: -20px;
+    padding-bottom: 10px;
+    color: var(---darkblue);
+    background-color: var(---lightblue);
+    text-align: center;
+}
+
+span:hover {
+    color: var(---darkblue)
+}
+
+.filters-items:hover {
+    background-color: var(---lightblue);
+
+}
+
+.filters-items-icon:hover {
+    color: white;
+}
+
+/****************search-info********************/
+
+.search-info {
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.search-info p {}
+
+.search-info-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border: solid var(---backgrey);
+    text-align: center;
+}
+
+.search-info-icon i {
+    color: var(---darkblue)
+}
+
+/******************************/
+.accomodation-wrapper {
+    display: flex;
+    gap: 1%;
+}
+
+.accomodation-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accomodation-cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    height: auto;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: var(---backgrey);
+
+}
+
+.accomodation-cards-title {}
+
+.accomodation-cards-items {
+    width: 260px;
+    height: 200px;
+    margin: 1%;
+    padding: 0.5%;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+
+.cards-picture {
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.cards-picture img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.cards-body {
+    height: 50%;
+    width: auto;
+    font-size: small;
+    line-height: 1px;
+
+
+
+}
+
+
+.accomodation-cards-items:hover {
+    color: var(---darkblue);
+}
+
+a {
+    color: black;
+}
+
+/**************************************/
+.popular-accomadation-container {
+    width: 29%;
+    height: auto;
+    background-color: var(---backgrey);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 1%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.popular-accomodation-title {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.popular-accomodation-card {
+    width: 300px;
+    height: 150px;
+    padding: 1%;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
