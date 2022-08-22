@@ -5,10 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
-}
+
 
 /*******************************font-import*****************************/
 :root {
@@ -19,45 +16,38 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 
-
-/*******************************main-wrapper*************************/
-#main-wrapper {}
-
-/*******************************menu-section*************************/
-.header {
-    width: 100%;
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 }
 
-.header-menu {
+/**************header**********************/
+nav {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.desktop-img {
-    width: 150px;
-}
-
-.mobile-img {
-    display: none;
-}
-
-.header-menu .header-menu-list nav ul {
+nav ul {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+
 }
 
-.header-menu-list nav li {
-    margin: 2%;
+nav li {
+    margin: 0 10px 0 10px;
 }
 
-a:hover {
-    border-top: 1px solid var(---darkblue);
+.desktop-nav-img {
+    width: 200px;
+}
+
+/**********to do :correct the hover position********/
+nav ul li :hover {
     color: var(---darkblue);
-
+    border-top: 2px solid var(---darkblue)
 }
+
+/*********************************************/
 
 /*******************header-mobile-version*********************/
 @media screen and (max-width:767px) {
@@ -65,7 +55,7 @@ a:hover {
         border-top: none;
         border-bottom: 1px solid var(---darkblue);
         color: var(---darkblue);
-        padding: 40px;
+        padding: 10px;
 
 
     }
@@ -73,67 +63,68 @@ a:hover {
 
 /***********search-section************/
 .search-wrapper {
-    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
 }
 
-.search-intro {
-    margin-bottom: 1px;
-}
+.search-intro {}
 
 .search-btn-box {
     height: 60px;
     width: 600px;
-    margin-top: 2%;
     position: relative;
+    text-align: left;
 
 }
 
 form .search-icon {
-    height: 40px;
+    height: 50px;
     width: 50px;
+    border-radius: 15px 0 0 15px;
+    padding-top: 2%;
+    color: black;
+    background-color: var(---backgrey);
+    position: relative;
     outline: none;
     text-align: center;
-    padding-top: 2%;
-    background-color: var(---backgrey);
-    color: black;
-    position: relative;
-    border-radius: 15px 0 0 15px;
 }
 
 input[type=text] {
-    height: 40px;
-    outline: none;
-    border: none;
-    display: inline-block;
-    position: absolute;
+    height: 50px;
     padding: 1%;
     border-radius: 0 15px 15px 0px;
-
+    border: 2px solid var(---backgrey);
+    outline: none;
+    display: inline-block;
+    position: absolute;
 }
 
 form button {
-    height: 40px;
+    height: 50px;
+    margin-left: 30%;
+    padding: 1%;
+    border-radius: 0 15px 15px 0;
     border: none;
     outline: none;
+    font-weight: bold;
     background-color: var(---darkblue);
     color: white;
     cursor: pointer;
     position: absolute;
-    margin-left: 30%;
-    border-radius: 0 15px 15px 0;
+
 }
 
 form .mobile-search-btn {
     display: none;
 }
 
+/******to do:correct the i postion"*****/
 .search-info {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     gap: 1%;
 }
-
 
 /******************searchbox-mobile-version********************************/
 @media screen and (max-width:767px) {
@@ -150,15 +141,19 @@ form .mobile-search-btn {
 
 
 
-/******************************************************/
+/***********************FILTERS*******************************/
+
+.search-wrapper {
+    display: flex;
+
+}
 
 .filters-wrapper {
-    width: 70%;
+    width: 71%;
     display: flex;
     flex-flow: row wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    font-weight: 400;
 }
 
 .fillters-title {
@@ -184,6 +179,7 @@ form .mobile-search-btn {
     cursor: pointer;
 }
 
+/****to do: correct the ratio *****/
 .filters-items-icon {
     height: 40px;
     width: 40px;
@@ -196,17 +192,22 @@ form .mobile-search-btn {
     text-align: center;
 }
 
+/****to do:correct the hover style*******/
+
 span:hover {
-    color: var(---darkblue)
+    color: var(---darkblue);
+    transition: 0, 5s;
 }
 
 .filters-items:hover {
     background-color: var(---lightblue);
+    transition: 0, 5s;
 
 }
 
 .filters-items-icon:hover {
     color: white;
+    transition: 0, 5s;
 }
 
 /****************search-info********************/
@@ -232,69 +233,73 @@ span:hover {
     color: var(---darkblue)
 }
 
-/******************************/
-.accomodation-wrapper {
+/***************ACCOMODATIONS(hébergements)***************/
+.accomodation-popular-wrapper {
+    width: 100%;
     display: flex;
-    gap: 1%;
+    padding: 1%;
+    background-color: white;
 }
 
 .accomodation-cards {
-    width: 100%;
+    width: 70%;
+    margin: 1px;
+    background-color: var(---backgrey);
+    border-radius: 0 20px 20px 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.accomodation-cards-container {
-    display: flex;
-    flex-flow: row wrap;
-    width: 70%;
-    height: auto;
-    padding: 2%;
-    border-radius: 20px;
-    background-color: var(---backgrey);
-
-}
-
-.accomodation-cards-title {}
-
-.accomodation-cards-items {
-    width: 260px;
-    height: 200px;
+.accomodation-cards-style {
+    width: 250px;
+    border-radius: 15px;
+    padding: 3%;
     margin: 1%;
-    padding: 0.5%;
     background-color: white;
-    box-shadow: 0px 5px 20px #999;
+
+
+
+
+}
+
+.accomodation-container-cards {
+    width: 250px;
+    padding: 0, 5%;
+    background-color: white;
     border-radius: 20px;
-    margin-top: 5%;
 }
 
-.cards-picture {
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-    overflow: hidden;
-    position: relative;
+/******régler la transition****/
+.accomodation-container-cards :hover {
+    transition: 0.3s;
+    box-shadow: 0 1px 20px #bfbbbb;
 }
 
-.cards-picture img {
+.container-card-image {
+    height: 150px;
+    padding: 1%;
+}
+
+.container-card-image img {
     width: 100%;
-    position: absolute;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
 }
 
-.cards-body {
-    height: 50%;
-    width: auto;
-    font-size: small;
+.container-card-body {
+    text-align: left;
     line-height: 1px;
-
-
-
+    padding: 10px;
 }
 
+.star-grey {
+    color: var(---backgrey);
+}
 
-.accomodation-cards-items:hover {
+.star-blue {
     color: var(---darkblue);
 }
 
@@ -304,18 +309,9 @@ a {
 
 /**************************************/
 .popular-accomadation-container {
-    width: 29%;
-    height: auto;
+    width: 28%;
     background-color: var(---backgrey);
     border-radius: 20px;
-    margin: 0 auto;
-    padding: 1%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-between;
-
-
 }
 
 .popular-accomodation-title {
@@ -324,6 +320,13 @@ a {
     align-items: center;
     justify-content: space-between;
     margin: 1%;
+}
+
+.popular-accomodation-box {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    border: solid 2px black;
 }
 
 .popular-accomodation-card {
@@ -335,5 +338,6 @@ a {
     border-radius: 20px;
     display: flex;
     flex-flow: column wrap;
+    margin-left: 10px;
 
 }
