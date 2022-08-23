@@ -17,34 +17,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 
 body {
-    margin: 0 auto;
+
+    margin: 0px auto;
+    padding: 1%;
     font-family: 'Raleway', sans-serif;
+
 }
 
-/**************header**********************/
+/**************header prpriétés à rajouter**********************/
+header {
+    width: 100%;
+
+}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 nav ul {
+    width: 20%;
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
-nav li {
-    margin: 0 10px 0 10px;
-}
+nav li {}
 
 .desktop-nav-img {
-    width: 200px;
+    width: auto;
+    height: 100%;
+    position: relative;
 }
 
 /**********to do :correct the hover position********/
 nav ul li :hover {
     color: var(---darkblue);
-    border-top: 2px solid var(---darkblue)
+    border-top: 2px solid var(---darkblue);
+    padding-top: 20%;
 }
 
 /*********************************************/
@@ -149,7 +162,7 @@ form .mobile-search-btn {
 }
 
 .filters-wrapper {
-    width: 71%;
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -233,70 +246,82 @@ span:hover {
     color: var(---darkblue)
 }
 
-/***************ACCOMODATIONS(hébergements)***************/
+/***************ACCOMODATIONS***************/
 .accomodation-popular-wrapper {
     width: 100%;
     display: flex;
-    padding: 1%;
     background-color: white;
+    justify-content: space-between;
+
 }
 
-.accomodation-cards {
+.accomodation-cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.accomodation-cards-title {
+    display: flex;
+}
+
+
+#accomodation-cards {
     width: 70%;
-    margin: 1px;
+    padding: 1%;
     background-color: var(---backgrey);
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 .accomodation-cards-style {
-    width: 250px;
+    width: 260px;
+    height: 230px;
     border-radius: 15px;
-    padding: 3%;
     margin: 1%;
     background-color: white;
-
-
-
+    overflow: hidden;
+    box-shadow: 0px 3px 10px #999;
 
 }
 
-.accomodation-container-cards {
-    width: 250px;
-    padding: 0, 5%;
-    background-color: white;
-    border-radius: 20px;
+.cards-picture {
+    width: auto;
+    padding: 1%;
+    overflow: hidden;
+
+}
+
+
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.cards-text {
+    height: 60%;
+    font-size: smaller;
+    line-height: 1px;
+    padding-bottom: 2%;
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 6%;
 }
 
 /******régler la transition****/
-.accomodation-container-cards :hover {
-    transition: 0.3s;
-    box-shadow: 0 1px 20px #bfbbbb;
-}
+transition: 0.3s;
 
-.container-card-image {
-    height: 150px;
-    padding: 1%;
-}
-
-.container-card-image img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-
-}
-
-.container-card-body {
-    text-align: left;
-    line-height: 1px;
-    padding: 10px;
-}
-
+/*******rate-style*******/
 .star-grey {
-    color: var(---backgrey);
+    color: #F2F2F2;
 }
 
 .star-blue {
@@ -307,37 +332,15 @@ a {
     color: black;
 }
 
-/**************************************/
-.popular-accomadation-container {
+/*************link*************************/
+.show-more-link {
+    display: flex;
+}
+
+/*********************POPULAR-SECTION********************/
+
+.popular-cards {
     width: 28%;
     background-color: var(---backgrey);
     border-radius: 20px;
-}
-
-.popular-accomodation-title {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1%;
-}
-
-.popular-accomodation-box {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    border: solid 2px black;
-}
-
-.popular-accomodation-card {
-    width: 300px;
-    height: 150px;
-    padding: 1%;
-    background-color: white;
-    box-shadow: 0px 5px 20px #999;
-    border-radius: 20px;
-    display: flex;
-    flex-flow: column wrap;
-    margin-left: 10px;
-
 }
