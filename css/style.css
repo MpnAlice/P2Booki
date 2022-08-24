@@ -18,61 +18,51 @@
 
 body {
 
-    margin: 0px auto;
-    padding: 1%;
+    margin: 0 auto;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
 
 }
 
-/**************header prpriétés à rajouter**********************/
+/**************HEADER*********************/
 header {
     width: 100%;
-
-}
-
-nav {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav ul {
-    width: 20%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
 
 }
 
-nav li {}
+.menu-logo {
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .desktop-nav-img {
     width: auto;
     height: 100%;
-    position: relative;
+}
+
+.menu-bar {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 3%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    padding: 5%;
 }
 
 /**********to do :correct the hover position********/
-nav ul li :hover {
+a:hover {
     color: var(---darkblue);
-    border-top: 2px solid var(---darkblue);
+    border-top: 1px solid var(---darkblue);
     padding-top: 20%;
-}
-
-/*********************************************/
-
-/*******************header-mobile-version*********************/
-@media screen and (max-width:767px) {
-    a:hover {
-        border-top: none;
-        border-bottom: 1px solid var(---darkblue);
-        color: var(---darkblue);
-        padding: 10px;
-
-
-    }
 }
 
 /***********search-section************/
@@ -140,22 +130,7 @@ form .mobile-search-btn {
     gap: 1%;
 }
 
-/******************searchbox-mobile-version********************************/
-@media screen and (max-width:767px) {
-    form .desktop-search-btn {
-        display: none;
-    }
-
-    form .mobile-search-btn {
-        display: inline;
-    }
-}
-
 /***********************************************************************/
-
-
-
-/***********************FILTERS*******************************/
 
 .search-wrapper {
     display: flex;
@@ -484,3 +459,161 @@ a {
 }
 
 .card-2 {}
+
+/**************************footer**************************************/
+footer {
+    width: 100%;
+    background-color: var(---backgrey);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    margin-top: 2%;
+
+
+
+}
+
+.footer-box {
+    flex-basis: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.footer-box h4 {
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer-box p {
+    line-height: 30px;
+}
+
+
+/*************************mediaqueries******************************/
+/***********header**********/
+
+@media screen and (max-width:767px) {
+    a:hover {
+        border-top: none;
+        border-bottom: 1px solid var(---darkblue);
+        color: var(---darkblue);
+        padding: 20%;
+
+    }
+
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-items: center;
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+    .menu-logo {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        justify-content: space-around;
+        order: 1;
+
+    }
+
+    .desktop-nav-img {
+        position: relative;
+        margin-right: -140%;
+        viewport-fit: 100%;
+
+    }
+
+    .menu-logo {
+        order: 1;
+    }
+
+    .menu-bar {
+        order: 2;
+    }
+
+    nav li {
+        padding: 20%;
+    }
+
+    /**********search*********/
+    .search-wrapper {
+        width: auto;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .filters-wrapper {
+        width: auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .fillters-title {
+        order: 1;
+    }
+
+    /*****mettre div filtres******/
+
+    .accomodation-popular-wrapper {
+        width: auto;
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    #accomodation-cards {
+        width: auto;
+        display: flex;
+        flex-flow: column wrap;
+        order: 2;
+    }
+
+    #popular-card {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        order: 1;
+    }
+
+    #Activity {
+        width: auto;
+        display: flex;
+        order: 3;
+
+    }
+}
+
+
+/******************searchbox-box********************************/
+@media screen and (max-width:767px) {
+    form .desktop-search-btn {
+        display: none;
+    }
+
+    form {
+        width: fit-content;
+
+    }
+
+    form .mobile-search-btn {
+        display: inline;
+    }
+
+
+
+
+}
+
+/***********************Body*******************************/
