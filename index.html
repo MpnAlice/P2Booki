@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,69 +8,72 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Booki</title>
-</head>
+ </head>
  <body>
-        <!----------------------header----------------------->
+     <!--HEADER-->
        <header>
-          <div class="menu-logo"><img class="desktop-nav-img" src="/images/logo/Booki.png" alt="logo Booki"></div>
-          <div class="menu-bar">
-              <nav>
-                 <ul>
-                      <li ><a  href="#accomodation-cards">Hébergements</a></li>
-                      <li ><a href="#Activity">Activités</a></li>
-                 </ul>
-               </nav>
-          </div>
-        </header>
+          <nav >
+             <img class="desktop-nav-img" src="/images/logo/Booki@3x.png" alt="logo du site Booki">
+             <img class="mobile-nav-img"src="/images/logo/Booki.png" alt="logo du site Booki">
+             <ul class="items">
+                 <li ><a  href="#accomodation-cards">Hébergements</a></li>
+                 <li ><a href="#Activity">Activités</a></li>
+             </ul>
+           </nav>
+     </header>
+     <!--SEARCH-SECTION-->
+     <div id="search-wrapper">
+         <section>
+              <div class="search-intro">
+                  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                  <p>En plein centre ville ou en pleine nature</p>
+              </div>
 
-       
-     <!---------------search-section--------------------->
-     <div class="search-wrapper">
-            <div class="search-intro">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-        
-            <div class="search-btn-box">
-                <form action="search">
-                    <i class="fa-solid fa-location-dot search-icon "></i>
-                    <input type="text" placeholder="Marseille,France">
-                    <button class="desktop-search-btn" type="submit" disabled>Rechercher</button> 
-                    <button class="mobile-search-btn"type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
-                </form>
-            </div>
-
+             <div id="search-btn-box">
+                 <form action="" method="post">
+                     <label for="zone de recherche">
+                         <i class="fa-solid fa-location-dot search-icon "></i>
+                     </label>
+                     <p>
+                         <input type="text" name="zone de recherche" id="zone de recherche" placeholder="Marseille,France">
+                         <button class="desktop-search-btn" type="submit" disabled>Rechercher</button> 
+                         <button class="mobile-search-btn"type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+                     </p>
+                    </form>
+             </div>
+            </section> 
             <!--------------------------FILTERS----------------------------------------->
-            <div class="filters-wrapper">
-
-               <div class="filters-title"><h3>Filtres</h3></div> 
-
-             <div class="filters-items">
-                 <i class="fa-solid fa-money-bill-wave filters-items-icon  "></i>
-                 <span>Économique</span>
+            <section class="filters-wrapper">
+             <div class="filters-title"><h3>Filtres</h3></div> 
+             <div class="filters-box">
+                 <div class="filters-items">
+                     <i class="fa-solid fa-money-bill-wave filters-items-icon  "></i>
+                     <span>Économique</span>
+                 </div>
+   
+                 <div class="filters-items">
+                     <i class="fa-solid fa-child-reaching filters-items-icon  "></i>
+                     <span>Familial</span>
+                 </div>
+                   
+                 <div class="filters-items">
+                     <i class="fa-solid fa-heart filters-items-icon  "></i>
+                     <span>Romantique</span>
+                 </div>
+   
+                 <div class="filters-items">
+                     <i class="fa-solid fa-dog filters-items-icon"></i>
+                     <span>Animaux Autorisés</span>
+                 </div> 
              </div>
 
-             <div class="filters-items">
-                  <i class="fa-solid fa-child-reaching filters-items-icon  "></i>
-                    <span>Familial</span>
-             </div>
-                
-             <div class="filters-items">
-                 <i class="fa-solid fa-heart filters-items-icon  "></i>
-                 <span>Romantique</span>
-             </div>
+                <div class="search-info">
+                      <i class="fa-solid fa-info search-info-icon "></i> 
+                       <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
 
-              <div class="filters-items">
-                 <i class="fa-solid fa-dog filters-items-icon"></i>
-                 <span>Animaux Autorisés</span>
-              </div> 
-
-            </div>
-            <div class="search-info">
-                <div class="search-info-icon"><i class="fa-solid fa-info  "></i></div>
-                <div class="search-info-text"> <p>Plus de 500 logements sont disponibles dans cette ville</p></div>
-            </div>
-     </div>
+            </section>
+        </div>
         <!-----------------ACCOMODATIONS------------------->
        
       <main class="accomodation-popular-wrapper">
@@ -322,6 +325,8 @@
 
 
             </div>
+
+
 
 
 
