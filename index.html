@@ -10,9 +10,9 @@
     <title>Booki</title>
  </head>
  <body>
-     <!--HEADER-->
-       <header>
-          <nav >
+        <!--HEADER-->
+     <header>
+         <nav >
              <img class="desktop-nav-img" src="/images/logo/Booki@3x.png" alt="logo du site Booki">
              <img class="mobile-nav-img"src="/images/logo/Booki.png" alt="logo du site Booki">
              <ul class="items">
@@ -20,30 +20,26 @@
                  <li ><a href="#Activity">Activités</a></li>
              </ul>
            </nav>
-     </header>
-     <!--SEARCH-SECTION-->
-     <div id="search-wrapper">
-         <section>
-              <div class="search-intro">
-                  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                  <p>En plein centre ville ou en pleine nature</p>
-              </div>
+       </header>
 
-             <div id="search-btn-box">
-                 <form action="" method="post">
-                     <label for="zone de recherche">
-                         <i class="fa-solid fa-location-dot search-icon "></i>
-                     </label>
-                     <p>
-                         <input type="text" name="zone de recherche" id="zone de recherche" placeholder="Marseille,France">
-                         <button class="desktop-search-btn" type="submit" disabled>Rechercher</button> 
-                         <button class="mobile-search-btn"type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
-                     </p>
-                    </form>
-             </div>
-            </section> 
-            <!--------------------------FILTERS----------------------------------------->
-            <section class="filters-wrapper">
+     <!--SEARCH-SECTION-->
+      <section>
+         <div class="search-intro">
+             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                  <p>En plein centre ville ou en pleine nature</p>
+         </div>
+         <section class="search-box">
+              <form action="search">
+                 <label for="search">
+                     <i class="fa-solid fa-location-dot search-icon"></i>
+                 </label>
+                 <p><input type="text" name="zone géographique" placeholder="Marseille,France" ></p>
+                 <input type="submit" value="Rechercher">
+                </form>
+             </section>
+      </section> 
+      <!--------------------------FILTERS----------------------------------------->
+        <section class="filters-wrapper">
              <div class="filters-title"><h3>Filtres</h3></div> 
              <div class="filters-box">
                  <div class="filters-items">
@@ -72,8 +68,8 @@
                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
 
-            </section>
-        </div>
+        </section>
+
         <!-----------------ACCOMODATIONS------------------->
        
       <main class="accomodation-popular-wrapper">
@@ -231,7 +227,7 @@
 
          </section>
          <!---Activites à Marseille-->
-         <section id="Activity">
+         <section id="activity">
              <div class="activity-title"><h3>Activités à Marseille</h3></div> 
 
              <div class="activity-cards-box">
@@ -242,8 +238,8 @@
                      </article>
                  </div>
  
-                  <div class="acrivity-style-split">
-                     <article class="card-2">
+                  <div class="activity-style-split">
+                     <article class="card-2  activity-style-split ">
                           <div class="activity-card-style card-picture2-style  ">
                               <div class="activity-card-picture2"> <img src="/images/activites/2_large/2.jpg" alt="Fort de Pomègues"></div>
                               <div class="activity-card-title"><h4>Fort de Pomègues</h4></div>
@@ -264,7 +260,7 @@
                   </div>
  
                   <div  class="activity-style-split">
-                     <article class="card-4   ">
+                     <article class="card-4  activity-style-split">
                          <div class="activity-card-style card-picture2-style  ">
                              <div class="activity-card-picture2"><img src="/images/activites/2_large/5.jpg" alt="Notre-Dame-de-la-Garde"></div>
                               <div class="activity-card-title"><h4>Notre-Dame-de-laGarde</h4></div>
