@@ -33,7 +33,7 @@
                  <label for="search">
                      <i class="fa-solid fa-location-dot search-icon"></i>
                  </label>
-                 <p><input type="text" name="zone géographique" placeholder="Marseille,France" ></p>
+                 <p><input type="text" name="zone géographique" placeholder="Marseille,France" id="search"></p>
                  <input type="submit" value="Rechercher">
                 </form>
              </section>
@@ -81,7 +81,7 @@
                            <div class="cards-picture"><img src="images/hebergements/2_large/1.jpg" alt="Hôtel du port,Marseille"></div>
                            <div class="cards-text">
                                <h4>Hôtel du port</h4>
-                               <p >Nuit à partir de <strong>52€</strong> </p>
+                               <p >Nuit à partir de 52 <strong>€</strong> </p>
                                <i class="fa-solid fa-star star-blue"></i>
                                <i class="fa-solid fa-star star-blue"></i>
                                <i class="fa-solid fa-star star-blue"></i>
@@ -98,7 +98,7 @@
                            <div class="cards-picture"><img src="images/hebergements/2_large/2.jpg" alt="Hôtel du port,Marseille"></div>
                            <div class="cards-text">
                                <h4>Hôtel du port</h4>
-                               <p >Nuit à partir de <strong>52€</strong> </p>
+                               <p >Nuit à partir de 52 <strong>€</strong> </p>
                                <i class="fa-solid fa-star star-blue"></i>
                                <i class="fa-solid fa-star star-blue"></i>
                                <i class="fa-solid fa-star star-blue"></i>
@@ -113,7 +113,7 @@
                            <div class="cards-picture"><img src="/images/hebergements/2_large/3.jpg" alt="Hôtel les mouettes,Marseille"></div>
                            <div class="cards-text">
                                <h4>Hôtel Les mouettes</h4>
-                               <p >Nuit à partir de <strong>76€</strong> </p>
+                               <p >Nuit à partir de 76 <strong>€</strong> </p>
                                <i class="fa-solid fa-star  star-blue"></i>
                                 <i class="fa-solid fa-star star-blue"></i>
                                 <i class="fa-solid fa-star star-blue"></i>
@@ -129,7 +129,7 @@
                            <div class="cards-picture"><img src="/images/hebergements/2_large/4.jpg" alt="Hôtel de la mer,Marseille"></div>
                            <div class="cards-text">
                                 <h4>Hôtel de la mer</h4>
-                                <p >Nuit à partir de <strong>46€</strong> </p>
+                                <p >Nuit à partir de 46 <strong>€</strong> </p>
                                <i class="fa-solid fa-star star-blue"></i>
                                <i class="fa-solid fa-star star-blue"></i>
                                <i class="fa-solid fa-star star-blue"></i>
@@ -144,7 +144,7 @@
                             <div class="cards-picture"><img src="/images/hebergements/2_large/5.jpg" alt="Auberge Le panier,Marseille"></div>
                              <div class="cards-text">
                                  <h4>Auberge Le panier</h4>
-                                 <p >Nuit à partir de <strong>23€</strong></p>
+                                 <p >Nuit à partir de 23 <strong>€</strong></p>
                                  <i class="fa-solid fa-star star star-blue"></i>
                                  <i class="fa-solid fa-star star star-blue"></i>
                                  <i class="fa-solid fa-star star star-blue"></i> 
@@ -159,7 +159,7 @@
                          <div class="cards-picture"><img src="/images/hebergements/2_large/6.jpg" alt="Hôtel chez Amina"></div>
                           <div class="cards-text">
                              <h4>Hôtel chez amina</h4>
-                             <p >Nuit à partir de <strong>25€</strong> </p>
+                             <p >Nuit à partir de 25 <strong>€</strong> </p>
                              <i class="fa-solid fa-star star-blue"></i>
                              <i class="fa-solid fa-star star-blue"></i>
                              <i class="fa-solid fa-star star-blue"></i>
@@ -227,53 +227,50 @@
 
          </section>
          <!---Activites à Marseille-->
+
          <section id="activity">
              <div class="activity-title"><h3>Activités à Marseille</h3></div> 
-
-             <div class="activity-cards-box">
-                 <div class="activity-style-large">
-                    <article class="card-1">
-                        <div class="activity-card-picture"><img src="/images/activites/1_xlarge/1.jpg" alt="Vieux port,Marseille"></div>
-                        <div class="activity-card-title"><h4>Vieux port</h4></div>
-                     </article>
-                 </div>
- 
-                  <div class="activity-style-split">
-                     <article class="card-2  activity-style-split ">
-                          <div class="activity-card-style card-picture2-style  ">
-                              <div class="activity-card-picture2"> <img src="/images/activites/2_large/2.jpg" alt="Fort de Pomègues"></div>
-                              <div class="activity-card-title"><h4>Fort de Pomègues</h4></div>
-                          </div>
-    
-                         <div class="activity-card-style card-picture2-style ">
-                               <div class="activity-card-picture2"><img src="/images/activites/2_large/3.jpg" alt="iles du Frioul"></div>
-                             <div class="activity-card-title"><h4>Iles du Frioul</h4></div>
-                          </div>
-                      </article>
-                    </div>
- 
-                 <div class="activity-style-large">
-                     <article class="card-3   ">
-                         <div class="activity-card-picture"><img src="/images/activites/2_large/4.jpg" alt="Parc national des calanques,Marseille"></div>
+             <section class="activity-cards-box">
+                 <article class="card-1 cards-style  ">
+                     <div class="items">
+                           <div class="cards-picture-style "><img  src="/images/activites/1_xlarge/1.jpg" alt="Vieux port,Marseille"></div>
+                           <div class="activity-card-title"><h4>Vieux port</h4></div>
+                       </div>
+                 </article>
+   
+                 <article class="card-2 cards-style2">
+                     <div class="items2 cards-style3">
+                         <div class="cards-picture-style2"> <img src="/images/activites/2_large/2.jpg" alt="Fort de Pomègues"></div>
+                          <div class="activity-card-title"><h4>Fort de Pomègues</h4></div>
+                     </div>
+   
+                      <div class="items2  cards-style3">
+                          <div class="cards-picture-style2"><img src="/images/activites/2_large/3.jpg" alt="iles du Frioul"></div>
+                          <div class="activity-card-title"><h4>Iles du Frioul</h4></div>
+                      </div>
+                 </article>
+   
+                 <article class="card-3 cards-style">
+                     <div class="items">
+                         <div class="cards-picture-style"><img src="/images/activites/2_large/4.jpg" alt="Parc national des calanques,Marseille"></div>
                           <div class="activity-card-title"><h4>Parc National des calanques</h4></div>
-                      </article>
-                  </div>
- 
-                  <div  class="activity-style-split">
-                     <article class="card-4  activity-style-split">
-                         <div class="activity-card-style card-picture2-style  ">
-                             <div class="activity-card-picture2"><img src="/images/activites/2_large/5.jpg" alt="Notre-Dame-de-la-Garde"></div>
-                              <div class="activity-card-title"><h4>Notre-Dame-de-laGarde</h4></div>
-                          </div>
-
-                          <div class="activity-card-style card-picture2-style  ">
-                              <div class="activity-card-picture2"><img src="/images/activites/2_large/6.jpg" alt="Parc Longchamp"></div>
-                               <div class="activity-card-title"><h4>Parc Longchamp</h4></div>
-                          </div>
-                       </article>
-                  </div>
-              </div>
-             
+                     </div>
+                     
+                 </article>
+   
+                  <article class="card-4 cards-style2">
+                     <div class="items2 cards-style3 ">
+                         <div class="cards-picture-style2"><img src="/images/activites/2_large/5.jpg" alt="Notre-Dame-de-la-Garde"></div>
+                         <div class="activity-card-title"><h4>Notre-Dame-de-laGarde</h4></div>
+                     </div>
+   
+                     <div class="items2  cards-style3">
+                         <div class="cards-picture-style2"><img src="/images/activites/2_large/6.jpg" alt="Parc Longchamp"></div>
+                         <div class="activity-card-title"><h4>Parc Longchamp</h4></div>
+                     </div>
+                   </article>
+                </section>
+            
             </section>
     
         </main>
