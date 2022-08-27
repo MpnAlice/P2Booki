@@ -253,6 +253,9 @@ input[type=submit] {
     display: flex;
 }
 
+.show-more-link a {
+    display: flex;
+}
 
 #accomodation-cards {
     width: 70%;
@@ -424,7 +427,7 @@ a {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 2px
 }
 
@@ -495,6 +498,8 @@ footer ul {
 
     /******************searchbox-box********************************/
     @media screen and (max-width:767px) {
+
+        /*search-box*/
         input[type=submit] {
             display: none;
         }
@@ -514,6 +519,28 @@ footer ul {
             padding-top: 20px;
         }
 
+        .filters-wrapper {
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            width: 100%;
+
+        }
+
+        .filters-title {
+            order: 1;
+        }
+
+        .filters-box {
+            width: 100%;
+            order: 2;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+        }
+
+
+        /*accomodations-popular*/
         .accomodation-popular-wrapper {
             width: 100%;
             display: flex;
@@ -525,18 +552,44 @@ footer ul {
         #popular-cards {
             order: 1;
             width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .popular-cards-box {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
         }
 
         #accomodation-cards {
+            background-color: white;
             order: 2;
+            display: flex;
+            flex-flow: columwrap;
+            width: 100%;
         }
 
-    }
+        .accomodation-cards-container {
+            display: flex;
+            flex-grow: column wrap;
+            justify-content: center;
 
-    #activity {
-        display: flex;
-        flex-flow: colum wrap;
-        order: 3;
+        }
+
+
+        #activity {
+            display: flex;
+            flex-flow: colum wrap;
+            order: 3;
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
     }
 
     /***********************Body*******************************/
