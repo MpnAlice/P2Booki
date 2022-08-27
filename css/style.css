@@ -45,7 +45,7 @@ nav li {
     margin: 10px 20px;
 }
 
-nav a:hover {
+li a:hover {
     color: var(---darkblue);
     border-top: 1px solid var(---darkblue);
     padding-top: 20px;
@@ -77,10 +77,27 @@ label {
 }
 
 input {
+    height: 50px;
     position: absolute;
     height: 50px;
     font-weight: bold;
     border: 2px solid var(---backgrey);
+}
+
+button {
+    position: absolute;
+    height: 50px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    left: 250px;
+    width: 50px;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(---darkblue);
+    border: none;
+    display: none;
 }
 
 input[type=text] {
@@ -99,11 +116,6 @@ input[type=submit] {
     border: none;
     color: white;
     outline: none;
-}
-
-form .mobile-search-btn {
-    display: none;
-
 }
 
 /******to do:correct the i postion"*****/
@@ -437,8 +449,6 @@ a {
     object-fit: cover;
 }
 
-
-
 /**************************footer**************************************/
 footer {
     width: 100%;
@@ -452,11 +462,6 @@ footer {
 footer ul {
     padding: 0;
 }
-
-
-
-
-
 
 /*mediaqueries*/
 
@@ -488,26 +493,50 @@ footer ul {
         width: 100%
     }
 
-
-
     /******************searchbox-box********************************/
     @media screen and (max-width:767px) {
-        form .desktop-search-btn {
+        input[type=submit] {
             display: none;
         }
 
-        form {
-            width: fit-content;
-
+        .mobile-nav-img {
+            display: none;
         }
 
-        form .mobile-search-btn {
-            display: inline;
+        button {
+            display: block;
         }
 
+        li a:hover {
+            color: var(---darkblue);
+            border-top: none;
+            border-bottom: 1px solid var(---darkblue);
+            padding-top: 20px;
+        }
 
+        .accomodation-popular-wrapper {
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            background-color: white;
+            justify-content: space-between;
+        }
 
+        #popular-cards {
+            order: 1;
+            width: 100%;
+        }
 
+        #accomodation-cards {
+            order: 2;
+        }
+
+    }
+
+    #activity {
+        display: flex;
+        flex-flow: colum wrap;
+        order: 3;
     }
 
     /***********************Body*******************************/
