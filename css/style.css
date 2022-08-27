@@ -45,7 +45,7 @@ nav li {
     margin: 10px 20px;
 }
 
-a:hover {
+nav a:hover {
     color: var(---darkblue);
     border-top: 1px solid var(---darkblue);
     padding-top: 20px;
@@ -442,32 +442,20 @@ a {
 /**************************footer**************************************/
 footer {
     width: 100%;
+    margin-top: 10px;
     background-color: var(---backgrey);
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
-    padding: 1%;
-    margin-top: 2%;
 }
 
-.footer-box {
-    flex-basis: 80%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-}
-
-.footer-box h4 {
-    margin: 0;
+footer ul {
     padding: 0;
-
 }
 
-.footer-box p {
-    line-height: 30px;
-}
+
+
+
 
 
 /*mediaqueries*/
