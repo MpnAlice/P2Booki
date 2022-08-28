@@ -12,11 +12,14 @@
  <body>
         <!--HEADER-->
      <header>
-         <nav >
-             <img class="desktop-nav-img" src="/images/logo/Booki@3x.png" alt="logo du site Booki">
-             <img class="mobile-nav-img"src="/images/logo/Booki.png" alt="logo du site Booki">
+          <nav >
+                <picture>
+                    <source media="(min-width:992px)" srcset="/images/logo/Booki.png">
+                    <source media="(max-width:768px)" srcset="/images/logo/Booki@3x.png" >
+                    <img src="/images/logo/Booki.png" alt="logo Booki">
+                </picture>
              <ul class="items">
-                 <li ><a  href="#accomodation-cards">Hébergements</a></li>
+                 <li ><a  href="#accomodation-cards">Hébergements</a></li> 
                  <li ><a href="#Activity">Activités</a></li>
              </ul>
            </nav>
@@ -78,7 +81,14 @@
              <div class="accomodation-cards-container"   >
                  <div class="accomodation-card1 accomodation-cards-style ">
                         <a href="#">
-                           <div class="cards-picture"><img src="images/hebergements/2_large/1.jpg" alt="Hôtel du port,Marseille"></div>
+                           <div class="cards-picture">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="images/hebergements/4_small/1.jpg">
+                                <source media="(max-width:768px )" srcset="images/hebergements/1_xlarge/1.jpg">
+                                <source media="(max-width:500px" srcset="images/hebergements/3_medium/1.jpg">
+                                <img src="images/hebergements/4_small/1.jpg" alt="Hôtel du port,Marseille">
+                            </picture>
+                           </div>
                            <div class="cards-text">
                                <h4>Hôtel du port</h4>
                                <p >Nuit à partir de 52 <strong>€</strong> </p>
@@ -277,30 +287,35 @@
         <!------------------------------footer------------------------      ----------------->
         <footer>
 
-          <section>
-             <ul>
-                  <h4>A propos</h4>
-                  <li><a href="#">Fontionnement du site</a>  </li>
-                  <li> <a href="#">Conditions générales de vente</a>  </li>
-                  <li> <a href="#">Données et confidentialité </a></li>
-             </ul>       
-         </section>
+            <div class="footer-wrap">
+                <section>
+                    <ul>
+                         <h4>A propos</h4>
+                         <li><a href="#">Fontionnement du site</a>  </li>
+                         <li> <a href="#">Conditions générales de vente</a>  </li>
+                         <li> <a href="#">Données et confidentialité </a></li>
+                    </ul>       
+                </section>
+       
+                <section>
+                     <ul>
+                         <h4>Nos hébergements</h4>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel </a></li>
+                     </ul>       
+                 </section>
+       
+                <section>
+                      <ul>
+                        <h4>Assistance</h4>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#"> contacter</a></li>
+                    </ul>       
+                </section>
 
-         <section>
-              <ul>
-                  <h4>Nos hébergements</h4>
-                 <li><a href="#">Charte qualité</a></li>
-                 <li><a href="#">Soumettre votre hôtel </a></li>
-              </ul>       
-          </section>
+            </div>
 
-         <section>
-               <ul>
-                 <h4>Assistance</h4>
-                 <li><a href="#">Centre d'aide</a></li>
-                 <li><a href="#"> contacter</a></li>
-             </ul>       
-         </section>
+         
         </footer>
         
         
