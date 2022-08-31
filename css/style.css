@@ -401,6 +401,10 @@ flex footer ul {
 }
 
 /*mediaqueries*/
+<<<<<<< HEAD
+=======
+/******************searchbox-box********************************/
+>>>>>>> header
 @media screen and (max-width:767px) {
     #bloc-page {
         width: 100%;
@@ -414,8 +418,11 @@ flex footer ul {
         margin: 0 auto;
     }
 
+<<<<<<< HEAD
     /*header*/
 
+=======
+>>>>>>> header
     .header-box {
         width: 100%;
         flex-flow: column wrap;
@@ -439,10 +446,16 @@ flex footer ul {
         border-top: none;
     }
 
+<<<<<<< HEAD
+=======
+    .header-menu-items li {}
+
+>>>>>>> header
     .header-logo {
         width: 30%;
     }
 
+<<<<<<< HEAD
     /*introduction*/
     .search-intro {
         margin: 0 auto;
@@ -454,18 +467,26 @@ flex footer ul {
     input[type=submit] {
         display: none;
         font-weight: bold;
+=======
+    /*searchbox*/
+    input[type=submit] {
+        display: none;
+>>>>>>> header
     }
 
     button {
         display: block;
     }
 
+<<<<<<< HEAD
     form {
         margin: 0 auto;
     }
 
     /*filters*/
 
+=======
+>>>>>>> header
     .search-wrapper {
         margin: 0 auto;
     }
@@ -474,6 +495,7 @@ flex footer ul {
         margin: 0 auto;
     }
 
+<<<<<<< HEAD
     .filters-items {
         margin: 10px;
     }
@@ -482,6 +504,9 @@ flex footer ul {
         transition: 0.1s;
         transition-duration: 0.1s;
     }
+=======
+}
+>>>>>>> header
 
 
     /*infos*/
