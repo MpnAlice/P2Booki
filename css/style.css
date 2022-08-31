@@ -1,5 +1,5 @@
 /************************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
     text-decoration: none;
@@ -44,6 +44,7 @@ body {
     height: auto;
 }
 
+
 .header-logo img {
     width: 100%;
     height: 100%;
@@ -78,6 +79,10 @@ body {
 .search-wrapper {
     display: flex;
     flex-flow: column wrap;
+}
+
+.search-intro h1 {
+    font-size: x-large;
 }
 
 
@@ -396,10 +401,99 @@ flex footer ul {
 }
 
 /*mediaqueries*/
-/******************searchbox-box********************************/
-@media screen and (m-width:992px) {}
+@media screen and (max-width:767px) {
+    #bloc-page {
+        width: 100%;
+        font-size: smaller;
+        padding: 5%;
+        margin: 0 auto;
+    }
+
+    body {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+    /*header*/
+
+    .header-box {
+        width: 100%;
+        flex-flow: column wrap;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-menu {
+        margin: 0;
+    }
+
+    .header-menu-items {
+        flex-flow: row wrap;
+        text-align: center;
+    }
+
+    .header-menu-items li :hover {
+        border-bottom: 2px solid var(---darkblue);
+        color: var(---darkblue);
+        padding-bottom: 30px;
+        border-top: none;
+    }
+
+    .header-logo {
+        width: 30%;
+    }
+
+    /*introduction*/
+    .search-intro {
+        margin: 0 auto;
+        display: inline-block;
+        width: 100%;
+    }
+
+    /*searchbox*/
+    input[type=submit] {
+        display: none;
+        font-weight: bold;
+    }
+
+    button {
+        display: block;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    /*filters*/
+
+    .search-wrapper {
+        margin: 0 auto;
+    }
+
+    .filters-wrapper {
+        margin: 0 auto;
+    }
+
+    .filters-items {
+        margin: 10px;
+    }
+
+    .filters-items:hover {
+        transition: 0.1s;
+        transition-duration: 0.1s;
+    }
 
 
+    /*infos*/
+    .infos {
+        width: 95%;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 
+    .infos p {
+        margin-left: 10px;
+    }
 
-/***********************Body*******************************/
+}
