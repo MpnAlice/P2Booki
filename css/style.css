@@ -378,42 +378,16 @@ a {
     object-fit: cover;
 }
 
-/**************************footer**************************************/
-footer {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    background-color: var(---backgrey);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-.footer-wrap {
-    width: 70%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-flex footer ul {
-    padding: 0;
-}
 
 /*mediaqueries*/
-/******************searchbox-box********************************/
 @media screen and (max-width:767px) {
     #bloc-page {
         width: 100%;
-        font-size: smaller;
-        padding: 10%;
         margin: 0 auto;
+        padding: 2%;
     }
 
-    body {
-        max-width: 767px;
-        margin: 0 auto;
-    }
+    /*header*/
 
     .header-box {
         width: 100%;
@@ -421,15 +395,21 @@ flex footer ul {
         text-align: center;
     }
 
-    .header-menu {}
-
     .header-logo {
-        width: 30%;
+        width: 100%;
+    }
+
+    .header-logo img {
+        width: 100%;
     }
 
     .header-menu-items {
-        flex-flow: row wrap;
-        text-align: center;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .header-menu-items li {
+        margin: 20px;
     }
 
     .header-menu-items li :hover {
@@ -439,39 +419,46 @@ flex footer ul {
         border-top: none;
     }
 
-    .header-menu-items li {}
-
     .header-logo {
         width: 30%;
+    }
+
+    /*intro*/
+    .search-wrapper {
+        width: 95%;
+        margin: 0 auto;
     }
 
     /*searchbox*/
     input[type=submit] {
         display: none;
-        font-weight: bold;
-        =======
-
-        /*searchbox*/
-        input[type=submit] {
-            display: none;
-            >>>>>>>header
-        }
-
-        button {
-            display: block;
-        }
-
-        .search-wrapper {
-            margin: 0 auto;
-        }
-
-        .filters-wrapper {
-            margin: 0 auto;
-        }
-
     }
 
+    button {
+        display: block;
+    }
 
+    /*filters*/
 
+    .search-wrapper {
+        margin: 0 auto;
+        display: block;
+    }
 
-    /***********************Body*******************************/
+    .filters-items {
+        margin: 10px
+    }
+
+    .filters-wrapper {
+        margin: 0 auto;
+    }
+
+    /*infos*/
+
+    .infos {
+        flex-flow: row nowrap;
+    }
+
+    /*main*/
+
+}
