@@ -8,24 +8,30 @@
 
 }
 
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+
+}
+
+#bloc-page {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
 :root {
     ---darkblue: #0065FC;
     ---lightblue: #DEEBFF;
     ---backgrey: #F2F2F2;
 }
 
-body {
-    margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
-
-}
-
-#bloc-page {
-    margin: auto;
-}
 
 /*header*/
 .header-box {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -35,6 +41,7 @@ body {
 /*logo*/
 .header-logo {
     width: 10%;
+    height: auto;
 }
 
 .header-logo img {
@@ -44,23 +51,27 @@ body {
 
 /*menu*/
 .header-menu {
-    margin: 0;
+    padding-left: 0;
+    margin: -2px;
 }
 
 .header-menu-items {
     display: flex;
-    margin: 0;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 0;
 }
 
 .header-menu-items li {
-    margin: 20px;
+    padding: 20px;
 }
 
 .header-menu-items li :hover {
+    border-top: 2px solid var(---darkblue);
     color: var(---darkblue);
-    border-top: var(---darkblue) 2px solid;
-    padding: 20px 0 0 0;
+    padding-top: 30px;
 }
+
 
 /*search-section*/
 /*intro*/
@@ -386,74 +397,7 @@ flex footer ul {
 
 /*mediaqueries*/
 /******************searchbox-box********************************/
-@media screen and (max-width:767px) {
-
-    # bloc-page {
-        margin: 0 auto;
-    }
-
-    header,
-    main,
-    section,
-    article,
-    footer,
-    body {
-        width: 100%;
-        margin: 0 auto;
-        font-weight: bold;
-        padding: 1% 1%;
-        font-size: small;
-    }
-
-    /*header*/
-    .header-box {
-        display: inline-block;
-        margin: 0 auto;
-
-    }
-
-    .header-logo {
-        margin-left: 30%;
-    }
-
-    .header-logo img {
-        width: 50%;
-        height: 50%;
-    }
-
-    .header-menu-items li :hover {
-        color: var(---darkblue);
-        border-top: none;
-        border-bottom: var(---darkblue) 2px solid;
-        padding: 0 0 20px 0;
-    }
-
-    .search-intro {
-        width: 80%;
-        font-size: x-small;
-    }
-
-    /*filters*/
-
-    .filters-box {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    /*search-button*/
-    input[type=submit] {
-        display: none;
-    }
-
-    button {
-        display: block;
-
-    }
-
-
-
-}
+@media screen and (m-width:992px) {}
 
 
 
