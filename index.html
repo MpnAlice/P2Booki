@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/Projet_Booki/css/style.css">
+    <link rel="stylesheet" href="/Projet_Booki/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Booki</title>
  </head>
  <body>
      <div id="bloc-page"> 
          <header>
-             <div class="container">
-                 <!--logo-->
-                 <picture class="header-logo">
-                     <source media="(min-width: 992px)" srcset="/images/logo/Booki@3x.png 285w">
-                      <source media="(max-width: 768px)" srcset="/images/logo/Booki.png 191w ">
-                      <img src="/images/logo/Booki@3x.png" alt="logo Booki">
-                 </picture>
-                 <!--menu-->
-                 <nav class="header-menu">
-                     <ul class="header-menu-items">
-                         <li ><a  href="#accomodation-cards">Hébergements</a></li> 
-                         <li class="style-hover"><a href="#Activity">Activités</a></li>
-                      </ul>
-                  </nav>
-              </div> 
-         </header>
+             <!--logo-->
+             <picture class="header-logo">
+                 <source media="(min-width: 992px)" srcset="/images/logo/Booki@3x.png 285w">
+                 <source media="(max-width: 768px)" srcset="/images/logo/Booki.png 191w ">
+                 <img src="/images/logo/Booki@3x.png" alt="logo Booki">
+             </picture>
+             <!--menu-->
+             <nav class="header-menu">
+                 <ul class="header-menu-items">
+                     <li ><a  href="#accomodation-cards">Hébergements</a></li> 
+                     <li class="style-hover"><a href="#Activity">Activités</a></li>
+                 </ul>
+             </nav>
+          </header>
 
           <!--search--->
           <article >
-               <div class="container">
+               <div class="search-section-container">
                   <section class="search-intro">
                       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                       <p>En plein centre ville ou en pleine nature</p>
@@ -48,7 +46,7 @@
                   </section>
 
                   <!--filtres-->
-                 <section class="filters-wrapper">
+                 <section class="filters-wrap">
                      <div class="filters-title"><h3>Filtres</h3></div> 
                      <div class="filters-box">
                          <div class="filters-items">
@@ -79,130 +77,140 @@
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>  
                     </div>
                 </div>
-
             </article>
+
             <!--main-->
             <main>
                 <div class="container">
                     <article class="accomodations-cards">
+
                      <h4>Hébergements à Marseille</h4>
-                     <div class="cards-container">
+
+                     <div class="accomodations-cards-box">
                          <section class="card">
                              <div class="card-header">
-                                  <img src="/images/hebergements/1_xlarge/hébergements à marseille/1.jpg" alt="">
+                                  <img src="/Projet_Booki/images/hebergements/1_xlarge/hébergements à marseille/1.jpg "style="width:100%" alt="Auberge de La Cannebière">
                              </div>
                              <div class="card-body">
                                  <h4>Auberge de La Cannebière</h4>
-                                  <p>Nuit à partir de 25 <strong>€</strong></p>
+                                  <p>Nuit à partir de 25 <b>€</b></p>
+                                  <span class="card-rating">
+                                     <i class="fa-solid fa-star blue"></i>
+                                     <i class="fa-solid fa-star blue"></i>
+                                     <i class="fa-solid fa-star blue"></i>
+                                     <i class="fa-solid fa-star blue"></i>
+                                     <i class="fa-solid fa-star grey"></i>
+                                  </span>
                               </div>
-                             <div class="card-rating">
-                                 <i class="fa-solid fa-star blue"></i>
-                                 <i class="fa-solid fa-star blue"></i>
-                                 <i class="fa-solid fa-star blue"></i>
-                                 <i class="fa-solid fa-star blue"></i>
-                                 <i class="fa-solid fa-star grey"></i>
+                             
+                            </section>
+
+                            <section class="card">
+                                <div class="card-header">
+                                     <img src="/images/hebergements/1_xlarge/hébergements à marseille/2.jpg "style="width:100%" alt="Auberge de La Cannebière">
+                                </div>
+                             <div class="card-body">
+                                 <h4>Auberge de La Cannebière</h4>
+                                     <p>Nuit à partir de 25 <b>€</b></p>
+                                 <span class="card-rating">
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star grey"></i>
+                                 </span>
+                              </div>
+                                
+                            </section>
+
+                            
+                            <!---->
+                            <section class="card">
+                                <div class="card-header">
+                                     <img src="/images/hebergements/1_xlarge/hébergements à marseille/3.jpg "style="width:100%" alt="Auberge de La Cannebière">
+                                </div>
+                                <div class="card-body">
+                                    <h4>Auberge de La Cannebière</h4>
+                                     <p>Nuit à partir de 25 <b>€</b></p>
+                                     <span class="card-rating">
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star grey"></i>
+                                     </span>
+                                 </div>
+                                
+                               </section>
+                            <!---->
+                            <section class="card">
+                             <div class="card-header">
+                                  <img src="/images/hebergements/1_xlarge/hébergements à marseille/4.jpg "style="width:100%" alt="Auberge de La Cannebière">
                              </div>
+                             <div class="card-body">
+                                 <h4>Auberge de La Cannebière</h4>
+                                 <p>Nuit à partir de 25 <b>€</b></p>
+                                 <span class="card-rating">
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star grey"></i>
+                                 </span>
+                             </div>
+                           </section>
+                            <!---->
+                            <section class="card">
+                                <div class="card-header">
+                                     <img src="/images/hebergements/2_large/4.jpg "style="width:100%" alt="Auberge de La Cannebière">
+                                </div>
+                                <div class="card-body">
+                                    <h4>Auberge de La Cannebière</h4>
+                                    <p>Nuit à partir de 25 <b>€</b></p>
+                                    <span class="card-rating">
+                                           <i class="fa-solid fa-star blue"></i>
+                                           <i class="fa-solid fa-star blue"></i>
+                                           <i class="fa-solid fa-star blue"></i>
+                                           <i class="fa-solid fa-star blue"></i>
+                                           <i class="fa-solid fa-star grey"></i>
+                                    </span>
+                                </div>
+                            </section>
+                        
+                            <!---->
+                            <section class="card">
+                                <div class="card-header">
+                                     <img src="/images/hebergements/1_xlarge/hébergements à marseille/6.jpg " style="width:100%" alt="Auberge de La Cannebière">
+                                </div>
+                                <div class="card-body">
+                                    <h4>Auberge de La Cannebière</h4>
+                                     <p>Nuit à partir de 25 <b>€</b></p>
+                                     <span class="card-rating">
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star blue"></i>
+                                        <i class="fa-solid fa-star grey"></i>
+                                     </span>
+                                 </div>
+                                
                             </section>
                             <!---->
-                         <section class="card">
-                             <div class="card-header">
-                                  <img src="/images/hebergements/1_xlarge/hébergements à marseille/2.jpg" alt="">
-                             </div>
-                             <div class="card-body">
-                                 <h4>Auberge de La Cannebière</h4>
-                                 <p>Nuit à partir de 52 <strong>€</strong></p>
-                             </div>
-                             <div class="card-rating">
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                             </div>
-                          </section>
-
-                          <section class="card">
-                             <div class="card-header">
-                                 <img src="/images/hebergements/1_xlarge/hébergements à marseille/3.jpg" alt="">
-                             </div>
-                             <div class="card-body">
-                                  <h4>Hôtel Les mouettes</h4>
-                                 <p>Nuit à partir de 76 <strong>€</strong></p>
-                             </div>
-                             <div class="card-rating">
-                                   <i class="fa-solid fa-star blue"></i>
-                                   <i class="fa-solid fa-star blue"></i>
-                                   <i class="fa-solid fa-star blue"></i>
-                                   <i class="fa-solid fa-star blue"></i>
-                                   <i class="fa-solid fa-star grey"></i>
-                            </div>
-                         </section>
-
-                         <section class="card">
-                             <div class="card-header">
-                                 <img src="/images/hebergements/1_xlarge/hébergements à marseille/4.jpg" alt="">
-                             </div>
-                             <div class="card-body">
-                                 <h4>Hôtel de la mer</h4>
-                                 <p>Nuit à partir de 46 <strong>€</strong></p>
-                             </div>
-                             <div class="card-rating">
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star grey"></i>
-                                  <i class="fa-solid fa-star grey"></i>
-                             </div>
-                         </section>
-
-                         <section class="card">
-                             <div class="card-header">
-                                 <img src="/images/hebergements/1_xlarge/hébergements à marseille/5.jpg" alt="">
-                              </div>
-                             <div class="card-body">
-                                 <h4>Auberge Le Panier</h4>
-                                  <p>Nuit à partir de 23 <strong>€</strong></p>
-                             </div>
-                             <div class="card-rating">
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                 <i class="fa-solid fa-star blue"></i>
-                                 <i class="fa-solid fa-star grey"></i>
-                              </div>
-                          </section>
-
-                         <section class="card">
-                             <div class="card-header">
-                                  <img src="/images/hebergements/1_xlarge/hébergements à marseille/6.jpg" alt="">
-                             </div>
-                             <div class="card-body">
-                                  <h4>Hôtel chez Amina</h4>
-                                  <p>Nuit à partir de 96 <strong>€</strong></p>
-                              </div>
-                             <div class="card-rating">
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                  <i class="fa-solid fa-star blue"></i>
-                                   <i class="fa-solid fa-star blue"></i>
-                              </div>
-                         </section>
                         </div>
                         <a href="#"><h4>Afficher plus</h4></a>
                     </article>
 
                     <!--popular--->
-
                  <article class="popular-cards">
-                     <div class="title">
+                     <div class="popular-title">
                          <h4>Les plus populaires</h4>
                          <i class="fa-solid fa-star "></i>
                      </div>
+
                      <div class="p-cards-container">
                          <section class="p-card">
                              <div class="p-card-image">
-                                 <img src="/images/hebergements/1_xlarge/les plus populaires/1.jpg" alt="Hôtel le soleil du matin">
+                                 <img src="/images/hebergements/1_xlarge/les plus populaires/1.jpg" alt="Hôtel le soleil du matin" style="width:100%">
                              </div>
 
                              <div class="p-card-body">
@@ -223,53 +231,57 @@
 
                          <section class="p-card">
                              <div class="p-card-image">
-                                 <img src="/images/hebergements/1_xlarge/les plus populaires/2.jpg" alt="Hôtel le soleil du matin">
+                                <img src="/images/hebergements/1_xlarge/les plus populaires/2.jpg" alt="Hôtel le soleil du matin" style="width:100%">
                              </div>
 
                              <div class="p-card-body">
-                                  <span>
-                                      <div class="card-title"><h4>Au coeur de l'eau <br> Chambres d'hôtes</h4></div>
-                                      <div class="card-info"><p>Nuit à partir de 71<strong>€</strong></p></div> 
-                                 </span>
-                                 
-                                 <div class="card-footer">
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star blue"></i>
-                                    <i class="fa-solid fa-star grey"></i>
-                                 </div>
-                             </div>
-                         </section>
-
-                         <section class="p-card">
-                             <div class="p-card-image">
-                                  <img src="/images/hebergements/1_xlarge/les plus populaires/2.jpg" alt="Hôtel le soleil du matin">
-                             </div>
-
-                             <div class="p-card-body">
-                                 <span>
-                                     <div class="card-title"><h4>Hôtel Tout bleu et<br> Blanc</h4></div>
-                                     <div class="card-info"><p>Nuit à partir de 128 <strong>€</strong></p></div>
-                                 </span>
+                                <span>
+                                    <div class="card-title"><h4>Hôtel Le soleil du <br> matin</h4></div>
+                                    <div class="card-info"><p>Nuit à partir de 128 <strong>€</strong></p></div>
+                                </span>
                                 
-                                 <div class="card-footer">
-                                     <i class="fa-solid fa-star blue"></i>
+                                <div class="card-footer">
                                      <i class="fa-solid fa-star blue "></i>
-                                     <i class="fa-solid fa-star blue "></i>
-                                     <i class="fa-solid fa-star blue "></i>
-                                     <i class="fa-solid fa-star grey"></i>
+                                    <i class="fa-solid fa-star blue"></i>
+                                    <i class="fa-solid fa-star blue"></i>
+                                    <i class="fa-solid fa-star blue"></i>
+                                    <i class="fa-solid fa-star blue "></i>
                                  </div>
-                              </div>
-                          </section>
+                             </div>
+                        </section>
+
+                        <section class="p-card">
+                            <div class="p-card-image">
+                               <img src="/images/hebergements/1_xlarge/les plus populaires/3.jpg" alt="Hôtel le soleil du matin" style="width:100%">
+                            </div>
+
+                            <div class="p-card-body">
+                               <span>
+                                   <div class="card-title"><h4>Hôtel Le soleil du <br> matin</h4></div>
+                                   <div class="card-info"><p>Nuit à partir de 128 <strong>€</strong></p></div>
+                               </span>
+                               
+                               <div class="card-footer">
+                                    <i class="fa-solid fa-star blue "></i>
+                                   <i class="fa-solid fa-star blue"></i>
+                                   <i class="fa-solid fa-star blue"></i>
+                                   <i class="fa-solid fa-star blue"></i>
+                                   <i class="fa-solid fa-star blue "></i>
+                                </div>
+                            </div>
+                       </section>
+
+
+
+                         
+
+                         
                         
                         </div>
                     </article>
                     <!--activities-->
                     <article class="activities">
-
-                         <div><h3>Activité à Marseille</h3></div>
-
+                     <div><h3>Activité à Marseille</h3></div>
                          <div class="activities-cards-container">
                              <div class="small-container">
                                   <section class="card1 ">
