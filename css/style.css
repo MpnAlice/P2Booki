@@ -1,10 +1,17 @@
 /************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+a{
+    color: black;
 }
 
 
@@ -21,20 +28,15 @@ body {
     margin: 0 auto;
 }
 
-.container {
-    margin: 0 auto;
-    border: 2px solid red;
-    flex-basis: 100%;
-}
-
 /*variables*/
 :root {
     ---darkblue: #0065FC;
     ---lightblue: #DEEBFF;
     ---backgrey: #F2F2F2;
+   
 }
 
-/*header*/
+/***********************HEADER********************/
 header {
     flex-basis: 100%;
     display: flex;
@@ -78,7 +80,7 @@ header {
     padding-top: 30px;
 }
 
-/*search-section*/
+/********************SEARCHBOX*********************/
 
 /*intro*/
 .search-section-container {
@@ -220,327 +222,326 @@ button {
     text-align: center;
 }
 
-/*accomodations--popular*/
-main .container {
-    flex-basis: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+/***MAIN**/
+main.container {
+flex-basis: 100%;
+flex-flow:row nowrap;
 }
 
-.accomodations-cards,
-.popular-cards {
+/***************ACCOMODATIONS*************/
+.accomodations-and-popular{
+    width: 100%;
+    display: flex;
+    gap: 1%;
+}
+.accomodations-box{
+    width: 65%;
+    border-radius: 15px;
     background-color: var(---backgrey);
-    display: flex;
+    
 }
-
-/*accomodations*/
-
-.accomodations-cards {
-    flex-basis: 66%;
+.cards-wrap
+{   width: 100%;
+    display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: space-between;
-    border-radius: 15px;
-    padding: 5px;
-}
-
-.accomodations-cards-box {
-    flex-basis: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.card {
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 15px;
-    margin: 3px auto;
-    display: block;
-    width: 200px;
     padding: 1%;
 
-
+}
+.accomodation-card{
+    background-color: white;
+    width:200px;
+    display: block;
+    box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.45);
+    font-size: small;
+    border-radius: 15px;
+    padding:3px;
+    margin:3px;
+  
+    
 }
 
-.card-header {
-    height: 120px;
+.accomodation-card:hover{
+    box-shadow: 0px 2px 11px 6px rgba(0,0,0,0.45);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-image{
+    height: 100px;
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
     border-radius: 15px 15px 0 0;
 
 }
-
-.card-header img {
-    max-width: 100%;
-    min-height: 100%;
-    position: absolute;
+.card-image img{
+    position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform:translate(-50%,-50%);
     border-radius: 15px 15px 0 0;
-}
 
-.accomodations-cards a {
-    color: inherit;
 }
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+.card-body{
+    line-height: 3px;
+    margin-left:5px;
+    padding-bottom:10px;
 }
-
-.card-body,
-.card-rating {
-    font-size: small;
-    margin-left: 2%;
-    line-height: 1px;
+.bluestar{
+    color: var(---darkblue);
 }
-
-.grey {
+.greystar{
     color: var(---backgrey);
 }
 
-.blue {
-    color: var(---darkblue);
-}
-
-/*popular*/
-
-.popular-cards {
-    flex-basis: 33%;
-    flex-flow: row wrap;
+/***************POPULAR*************/
+.popular-box{
+    width: 32%;
+    height: auto;
     border-radius: 15px;
-}
-
-/*title*/
-.popular-title {
-    border: 2px solid;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    width: 100%;
+    background-color: var(---backgrey);
     margin: 0 auto;
-}
-
-/*container*/
-.p-cards-container {
-    flex-basis: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-.p-card {
-    font-size: x-small;
-    width: 250px;
-    display: flex;
-    background-color: white;
-    border-radius: 15px;
     padding: 1%;
+   
+    
+}
+.popular-box .title
+{
+  width:100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.p-card-image {
-    width: 150px;
-    position: relative;
-    overflow: hidden;
+.popular-box .title .fa-solid{
+    position:relative;
+    right: 1px;
 }
 
-.p-card-image img {
-    border-radius: 15px 0 0 15px;
-    position: absolute;
-    max-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
-
-.p-card-body {
-    padding-left: 10px;
-    height: 100px;
+.cards-wrap2{
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    padding: 2px;
 }
 
-.p-card-body span {}
+.popular-card
+{
+  background-color: white;
+  display: flex;
+  width: auto;
+  height:140px;
+  margin: 10px;
+  font-size: small;
+  position: relative;
+  border-radius: 15px;
+  padding: 2px;
+ box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.45);
+}
 
-.card-info p {}
-
-/*activities*/
-.activities {
-    width: 100%;
+.popular-card-image{
+    width: 150px;
     height: auto;
+    overflow:hidden;
+    position: relative;
+    border-radius: 15px 0 0 15px;
+}
+.popular-card-image img{
+    min-height: 100%;
+    max-height: :100%;
+    object-fit: cover;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.popular-card-body{
     display: flex;
-    flex-flow: column wrap;
-    margin-bottom: 5%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 2px;
+    line-height:9px;
+}
+.card-infos p{
+    margin-top: 2px;
 }
 
-.activities-cards-container {
+
+/***************ACTIVITIES************/
+.activities{
+width: 100%;
+}
+.activities-box{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 2px;
-    padding: 2px;
-
 }
 
-.card2,
-.card3,
-.card5,
-.card6 {
-    box-shadow: 0 5px 20px var(---backgrey);
-}
-
-.small-container {
-    margin: 0 auto;
-    width: 24%;
-    height: 400px;
+.card-container{
+    width: 20%;
     border-radius: 15px;
-    text-align: left;
+    background-color: white;
     overflow: hidden;
-    box-shadow: 0 5px 20px var(---backgrey);
+}
+.activities-card-image{
+    height: 250px;
+    overflow:hidden;
+    position: relative;
+
 }
 
-.small-container2 {
-    width: 24%;
-    height: fit-content;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    gap: 11px;
-}
-
-.activity-image {
-    overflow: hidden;
-    max-width: 100%;
-    height: 350px;
-    display: block;
-}
-
-.activity-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+.activities-card-image img{
+    min-height:100%;
+    max-height:100%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
 }
 
-.activity-title {
+.activities-card-image2{
+ height: 100px;
+ overflow:hidden;
+ position: relative;
+
+}
+.activities-card-image2 img{
+    min-height:100%;
+    max-height:100%;
+    object-fit: cover;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.activities-box h4{
     font-size: small;
+    padding: 5px;
 }
 
 
-.card3,
-.card6,
-.card2,
-.card5 {
-    margin: 0 auto;
-    width: 100%;
-    height: 20%;
-    border-radius: 15px;
+.card1,.card2,.card3,.card4,.card5,.card6
+{margin:0 auto;
 }
-
-.card5 .activity-image {
-    overflow: hidden;
-    width: auto;
-    height: 150px;
-    display: block;
-}
-
-.card5 .activity-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-    object-position: center;
-}
-
-
-.card6 .activity-image {
-    overflow: hidden;
-    width: auto;
-    height: 160px;
-    display: block;
-}
-
-
-.card6.activity-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-
-.card3 .activity-image {
-    overflow: hidden;
-    width: auto;
-    height: 160px;
-    display: block;
-}
-
-.card3.activity-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-
-.card2 .activity-image {
-    overflow: hidden;
-    width: auto;
-    height: 150px;
-    display: block;
-}
-
-.card2 .activity-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.small-container h4 {
-    font-size: small;
-    margin-left: 10px;
-    padding-bottom: 1px;
-}
-
+/* ************************FOOTER************************* */
 
 /*footer*/
-footer {
-    margin: 0 auto;
-    clear: both;
-    position: relative;
+footer{
     width: 100%;
-    height: auto;
-    margin-top: 0;
+    display:flex;
+    flex-flow:row wrap;
     background-color: var(---backgrey);
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: auto;
-    font-size: small;
-
 }
 
-footer .container {
-    display: flex;
-    flex-direction: column wrap;
-    justify-content: space-between;
-    width: 80%;
-    height: 100px;
+/* *****************MEDIAQUERIES*********************** */
+
+                    /*tablettes*/
+@media screen and (max-width:768px){
+    #bloc-page,body{
+        margin: 0 auto;
+       }
+
+    /* ***header** */
+    header {
+        flex-flow: column wrap;
+     }
+
+    .header-menu-items li :hover {
+     border-bottom: 2px solid var(---darkblue);
+     padding-bottom: 30px;
+     border-top: none;
+    }
+
+    /* ***SEARCHBOX** */
+    .search-section-container{
+        width: 100%;
+    }
+
+    button{
+        display: block;
+    }
+    input[type=submit]{
+        display: none;
+    }
+    /* ***FOOTER** */
+
+    footer{
+        margin: 0 auto;
+    }
+    
 
 }
+/***********************************************************/
+                    /*téléphones*/
+@media screen and (max-width:700px){
+   
+   #bloc-page {
+    margin: 0 auto;
+   }
+    /* ***header** */
+
+    header {
+        flex-flow: column wrap;
+    }
+
+    .header-menu-items li :hover {
+     border-bottom: 2px solid var(---darkblue);
+     padding-bottom: 30px;
+     border-top: none;
+    }
+
+    /* ***SEARCHBOX** */
+    .search-section-container{
+        width: 100%;
+    }
+   
+    button{
+        display: block;
+    }
+    input[type=submit]{
+        display: none;
+    }
+
+ /* ***ACCOMODATIONS AND POPULAR** */
+ .accomodations-and-popular{
+    flex-flow: column-reverse;
+    
+ }
+ /* ***ACCOMODATIONS AND POPULAR** */
+ .popular-box{
+    width: 100%;
+    margin: 0 auto;
+ }
+ .accomodations-box{
+    width:100%;
+    background-color:white;
+    margin: 0 auto;
+
+    
+ }
+ .accomodation-card{
+    width: 100%;
+    height: fit content;
+ }
+ .card-image{
+ }
 
 
-/*mediaqueries*/
+ /* ***ACTIVITIES** */
+ .activities{
+    margin: 0 auto;
+ }
+ .activities-box{
+    margin: 0 auto;
+    flex-flow: column wrap;
+ }
 
-/*tablettes*/
+
+ }
+ 
