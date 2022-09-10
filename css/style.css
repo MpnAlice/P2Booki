@@ -234,7 +234,7 @@ flex-flow:row nowrap;
     display: flex;
     gap: 1%;
 }
-.accomodations-box{
+#accomodations-box{
     width: 65%;
     border-radius: 15px;
     background-color: var(---backgrey);
@@ -371,7 +371,7 @@ flex-flow:row nowrap;
 
 
 /***************ACTIVITIES************/
-.activities{
+#activities{
 width: 100%;
 }
 .activities-box{
@@ -469,6 +469,20 @@ footer{
     input[type=submit]{
         display: none;
     }
+ /* ***ACTIVITIES** */
+ #activities{
+    margin: 0 auto;
+ }
+ .activities-box{
+    margin: 0 auto;
+    flex-flow: column wrap;
+ }
+ .card-container{
+    width: 100%;
+    margin: o auto;
+ }
+
+
     /* ***FOOTER** */
 
     footer{
@@ -518,7 +532,7 @@ footer{
     width: 100%;
     margin: 0 auto;
  }
- .accomodations-box{
+ #accomodations-box{
     width:100%;
     background-color:white;
     margin: 0 auto;
@@ -534,14 +548,27 @@ footer{
 
 
  /* ***ACTIVITIES** */
- .activities{
-    margin: 0 auto;
+    #activities{
+      width: 100%;
+      margin: 0 auto;
  }
- .activities-box{
-    margin: 0 auto;
-    flex-flow: column wrap;
+    .activities-box{
+     margin: 0 auto;
+     flex-flow: column wrap;
+     width: 100%;
+ }
+    .card-container{
+      width: 100%;
+      margin: o auto;
  }
 
+ /* ***FOOTER** */
+
+    footer{
+        margin: 0 auto;
+        flex-flow: column;
+    }
+    
 
  }
  
