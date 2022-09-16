@@ -39,6 +39,7 @@ flex-flow: column wrap;
     color: var(---backgrey);
 }
 a{
+    font-style: normal;
     color: inherit;
 }
 
@@ -240,7 +241,7 @@ main.container {
 flex-basis: 100%;
 flex-flow:row nowrap;
 max-width: 100%;
-padding: 10px;
+margin: 30px;
 }
 .accomodations-and-popular{
     width: 100%;
@@ -258,6 +259,7 @@ padding: 10px;
     width: 65%;
     border-radius: 15px; 
     padding: 1%;
+    
 }
 
 .cards-wrap
@@ -268,8 +270,7 @@ padding: 10px;
 }
 
 .accomodation-card{
-    width: 220px;
-    height: auto;
+    width: 210px;
     display: block;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
@@ -313,17 +314,18 @@ padding:0 0 6px 6px;
     border-radius: 15px;
     padding: 2%;
     gap: 1%;
+   
 }
-.popular-box .title
+.popular-box .title{
+ width:100%;
+ display: flex;
+ flex-flow: row nowrap;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+}
 
-{
-  width:100%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
+  
 
 .popular-box .title .fa-solid{
     position:relative;
@@ -336,8 +338,7 @@ padding:0 0 6px 6px;
     flex-flow: column wrap;
 }
 
-.popular-card
-{
+.popular-card{
   background-color: white;
   display: flex;
   height: 130px;
@@ -350,7 +351,7 @@ padding:0 0 6px 6px;
 }
 
 .popular-card-image{
-    width: 150px;
+    width: 120px;
     height: auto;
     overflow:hidden;
     position: relative;
@@ -366,11 +367,11 @@ padding:0 0 6px 6px;
     transform:translate(-50%,-50%);
 }
 .popular-card-body{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-   padding: 0 0 5px 10px;
-  word-wrap: break-word;
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: space-between;
+ padding: 0 0 5px 10px;
+ word-wrap: break-word;
   font-size: small;
 }
 .card-infos h4 {
@@ -387,26 +388,30 @@ padding:0 0 6px 6px;
 /***************ACTIVITIES************/
 #activities{
     display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    padding: 2%;
+    max-width: 100%;
+    flex-flow:column wrap;
 }
 
-.activities-box{
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap; 
-    align-content: space-between;
-    margin: 0 auto;
-
-}
-.activities-box h4{
+.activities.title{
     font-size: small;
     padding: 0;
     margin-left: 10px;
 }
 
-.activity-card{
+.activities-cards-wrap{
+ min-width:100%;
+ display: flex;
+ flex-flow: row nowrap;
+ margin: 0 auto;
+}
+
+#activities h4{
+    font-size: small;
+    padding-left: 10px;
+}
+
+
+.card-style{
     width:250px;
     height: fit-content;
     display: block;
@@ -414,15 +419,16 @@ padding:0 0 6px 6px;
     box-shadow: 0px 5px 20px var(---lightblue);
     overflow: hidden;
     border-radius: 15px;
-    margin:20px;
+    margin: 10px;
 }
 
-.activity-card-image{
-    height: 400px;
-    position: relative; 
+.activities-cards-wrap .card-image{
+    height: 300px;
+    position: relative;
 }
 
-.activity-card-image img{
+
+.card-image img , .card-image2 img{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -431,79 +437,57 @@ padding:0 0 6px 6px;
     transform: translate(-50%, -50%);
     object-fit: cover;
 }
+
 
 /**double-activity-container**/
 
-.activity-card-container{
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: space-between;
+.activities-cards-wrap .card-image2{
+    height: 120px;
+    position: relative;
 }
-.card2 .activity-card-image2{
-    height: 200px;
-}
-.card3 .activity-card-image2
+
+.container2 .card2 .card-image2
 {
-    height: 100px;
+  height: 150px;
 }
-
-.activity-card2{
-    width:250px;
-    display: block;
-    background-color: white;
-    box-shadow: 0px 5px 20px var(---lightblue);
-    overflow: hidden;
-    border-radius: 15px;
-    margin: 20px;
-
+.container2 .card3 .card-image2
+{
+  height: 90px;
 }
 
 
-.activity-card-image2{
-    height: 150px;
-    position: relative; 
-}
-
-
-.activity-card-image2 img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
-
-
-.activity-card-image img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
+.container2,.container4
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 
 
 /* ************************FOOTER************************* */
-
-/*footer*/
-.footer-wrap{
-    width: 80%;
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content: space-between;
-    padding: 3%;
+footer h4{
+    margin-bottom: 0;
+}
+footer ul{
+    padding-left: 0;
 }
 footer{
-     width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
 }
-footer nav {
-    font-weight: normal;
+.footer-links-container{
+    width:80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: small;
+}
+.links-section{
+    line-height: 20px;
+}
+.link1{
+    margin-left:0;
 }
 
 
@@ -538,10 +522,11 @@ footer nav {
         display: none;
     }
  /* ***ACTIVITIES** */
+
  #activities{
     margin: 0 auto;
  }
- .activities-box{
+ .activities-cards-wrap{
     margin: 0 auto;
     flex-flow: column wrap;
  }
@@ -601,26 +586,24 @@ footer nav {
 
  /* ***ACCOMODATIONS AND POPULAR** */
  .accomodations-and-popular{
-    flex-flow: column-reverse;
+      flex-flow: column-reverse;
     
  }
  /* ***ACCOMODATIONS AND POPULAR** */
  .popular-box{
-    width: 100%;
-    margin: 0 auto;
+     width: 100%;
+     margin: 0 auto;
  }
  #accomodations-box{
-    width:100%;
-    background-color:white;
-    margin: 0 auto;
+      width:100%;
+     background-color:white;
+     margin: 0 auto;
 
     
  }
  .accomodation-card{
     width: 100%;
     height: fit content;
- }
- .card-image{
  }
 
 
@@ -629,32 +612,31 @@ footer nav {
       width: 100%;
       margin: 0 auto;
  }
-    .activities-box
-    .activity-card-container{
+    .activities-cards-wrap{
+     width:100%;
+     display: flex;
+     flex-flow: column wrap;
      margin: 0 auto;
-     flex-direction: column;
-     width: 100%;
+   }
+   .card-style {
+    width: 100%;
+    margin: 10px  auto;
+   }
+   .activities-cards-wrap .card-image
+   
+   {
+    height: 120px;
+    position: relative;
+}
+ .container2 .card3 .card-image2{
+    height: 120px;
  }
-    .activity-card,
-    .activity-card2{
-        min-width: 100%;
-        margin: 10px auto;
-    }
     
-    .activity-card-image,
-    .activity-card-image2 { 
-      max-width: 100%;
-      margin: 0 auto;
-      height: 150px;
-    }
-    .card2 .activity-card-image2{
-        height: 150px;
-    }
-    .card3 .activity-card-image2
-    {
-        height: 150px;
-    }
 
+ }
+
+
+    
  /* ***FOOTER** */
    .footer-wrap{
      flex-flow: column;
@@ -666,6 +648,5 @@ footer nav {
         flex-flow: column;
     }
     
-
  }
  
