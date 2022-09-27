@@ -14,6 +14,7 @@ html{
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    max-width: 1440px;
 
 }
 
@@ -21,7 +22,7 @@ body {
 main,header{
     max-width:1440px;
     margin: 0 auto;
-    border: 2px solid ;
+    padding: 0 2%;
 }
 
 /*general style*/
@@ -304,6 +305,7 @@ form .fa-solid{
     overflow: hidden;
     box-shadow: 5px 5px 5px var(---grey);
     margin-bottom: 20px;
+    display: block;
     
 }
 
@@ -325,13 +327,11 @@ form .fa-solid{
  margin: 0;
 }
 .card-infos{
-   display: flex;
-   flex-flow: column wrap;
-    margin:5px 0 5px 10px;
-    line-height: 25px;
-    
+ display: flex;
+ flex-flow: column wrap;
+ margin:5px 0 5px 10px;
+ line-height: 25px;
 
-   
 }
 .rate{
     font-size: small;
@@ -355,7 +355,7 @@ form .fa-solid{
 }
 
 .popular-cards-container{
-    width: 100%;
+    width: 95%;
     height: 100%;
     max-width: 100%;
     display: flex;
@@ -367,9 +367,9 @@ form .fa-solid{
 }
 
 .popular-card{
+    width:100%;
     display: flex;
-    width: 100%;
-    min-height:140px;
+    height:150px;
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
@@ -382,20 +382,22 @@ form .fa-solid{
     object-fit: cover;
     min-width:35%;
     width: 35%;
-    height:140px;
+    min-height:100%;
     border-radius: 16px 0 0 16px;
 }
 
 .popular-card-infos h4,
 .popular-card-infos p{
     margin: 10px;
+    height: 100%;
 }
 
 .popular-card-infos{
  flex-basis: 100%;
  margin-left:10px;
  display: flex;
- flex-direction: column;
+ flex-flow: column nowrap;
+ border
 }  
 .stars{
    margin-top:auto;
@@ -531,35 +533,39 @@ form .fa-solid{
 footer ul ,
 footer h4{
     padding-left: 0;
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
 }
 footer a{
     font-weight: normal;
     
 }
+footer  ul li{
+    margin-top: 20px;
+   }
+   
+   
+
 /******/
 
 footer{
     margin-top: auto;
-    width: 100%;
+    flex-basis: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: var(---grey);
     padding: 1%;
-}
-.bloc1{
+    padding: 2%;
 }
 footer>*{
-    flex-basis: 25%;
-    
-   
-  
+    flex-basis:30%;
 }
 
 
-footer  ul li{
- margin-top: 20px;
+
+.bloc1{
+    margin-left: 16px;
+
 }
 
 
@@ -573,7 +579,7 @@ footer  ul li{
 }
                    
                     /*tablettes*/
-@media screen and (max-width:990px) and (min-width:768px){
+@media screen and (max-width:991px) and (min-width:768px){
     .nav-bar-items{
         display: flex;
         flex-direction: column;
@@ -607,6 +613,8 @@ footer  ul li{
        flex-direction: column;
 
     }
+    
+     
     
     
     .search-intro{
