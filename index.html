@@ -22,7 +22,7 @@
              </picture>
              <!--links-->
              <div class="nav-bar-items">
-                 <div class="link"><a href="#accomodations-box">Hébergements</a> </div>
+                 <div class="link"><a href="#accomodations">Hébergements</a> </div>
                  <div class="link"><a href="#activities">Activités</a></div>
              </div>
          </nav>
@@ -40,8 +40,9 @@
              <div class="search-bar-container">
                  <form role="search">
                      <i class="fa-solid fa-location-dot search-icon border-style"></i>
+                       <!--search set to disabled-->
                      <input type="search" id="search" name="Zone géographique" placeholder="Marseille,France" aria-label="Rechercher parmi le contenu du site">
-                     <button class="desktop-btn border-style"><span>Rechercher</span>
+                     <button disabled class="desktop-btn border-style "><span>Rechercher</span>
                          <i class="fa-solid fa-magnifying-glass"></i><br>
                      </button>
                  </form>  
@@ -76,7 +77,7 @@
                 <!-- infos-tag -->
    
              <div class="infos">
-                 <i class="fa-solid fa-info"></i>
+                 <span><i class="fa-solid fa-info"></i></span>
                  <p>Plus de 500 logements sont disponibles dans cette ville</p>  
              </div>
             </div>
@@ -223,7 +224,7 @@
                      </article>
                  </div>    
                  <!--link-->
-                 <a href="#"><h3>Afficher plus</h3></a>
+                 <div class="show-more-link"><a href="#"><h3>Afficher plus</h3></a></div>
                </section>
                
                 <!-- POPULAR -->
@@ -414,6 +415,7 @@
              <h4>Assistance</h4>
               <ul>
                   <li><a href="#">Centre d'aide</a></li>
+                  <!--replace with real mail-->
                   <li><a href="mailto:mail@booki.com">Nous contacter</a></li>
              </ul>
          </div> 
