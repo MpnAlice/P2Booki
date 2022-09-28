@@ -509,7 +509,7 @@ form .fa-solid{
 .accomodation-card:hover{
     box-shadow: 5px 5px 5px 1px var(--button-bg-);
      transition:0.5s;
-     color: var(---blue);
+     color: var(--elements-clr);
 
 }
 
@@ -573,8 +573,8 @@ footer>*{
      .link:hover{
        font-weight: bold;
        border-top: none;
-        background-color: var(---lightblue);
-        color: var(---darkblue);
+        background-color: var(--button-bg-);
+        color: var(--elements-clr);
         transition: 0.3s;
     }
     /****/
@@ -662,8 +662,9 @@ footer>*{
         flex-direction:column;
         background-color: white;
     }
+
     .popular-card{
-        box-shadow: 0px 5px 20px var(---bluelight);
+        box-shadow: 0px 5px 20px var(--button-bg-);
     }
     
  .mobile-btn{
@@ -706,13 +707,13 @@ footer>*{
     }
     .link:hover{
         border-top: none;
-        border-bottom: 3px solid var(---blue);
-        color: var(---darkblue);
+        border-bottom: 3px solid var(--elements-clr);
+        color: var(--elements-clr);
     }
    
     .nav-bar-items{
      width: 100%;
-     border-bottom: 3px solid var(---grey);
+     border-bottom: 3px solid var(--main-bg);
      height: 80px;
 
     }
