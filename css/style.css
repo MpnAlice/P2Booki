@@ -376,8 +376,15 @@ form .fa-solid{
     overflow: hidden;
     margin: 0 auto;
     padding: 5px;
-    box-shadow: 5px 5px 5px 1px #999;
+    box-shadow: 5px 5px 5px 1px #999;  
+
 }
+.popular-card a{
+    display: flex;
+   gap: 4%;
+    
+  }
+
 
 .popular-card img {
     width: 100%;
@@ -386,10 +393,11 @@ form .fa-solid{
     object-fit: cover;
 }
 .popular-card picture{
-    width:34%;
+    width:35%;
     border-radius: 16px 0 0 16px;
    
 }
+
 .popular-card-infos{
     width: 62%;
     display: flex;
